@@ -37,7 +37,7 @@ O ambiente descrito utiliza Ubuntu 24.04 no host e um contêiner com Ubuntu 18.0
 | `enter rostopic list` | Executa uma inspeção dentro da sessão existente | Lista os tópicos do ROS sem iniciar outra simulação |
 | `simulate /work/config/arquivo.conf` | Executa uma configuração escolhida | Permite, por exemplo, converter imagens de um dataset em eventos |
 
-O nome padrão do contêiner gráfico é `esim-gui`. Segundo o guia, apenas uma sessão pode usar esse nome; `ESIM_CONTAINER` permite escolher outro. Os comandos `gui`, `view` ou `shell-gui` precisam ter criado uma sessão antes de usar `enter`.
+O nome padrão do contêiner gráfico é `esim-gui`. Apenas uma sessão pode usar esse nome; `ESIM_CONTAINER` permite escolher outro. Os comandos `gui`, `view` ou `shell-gui` precisam ter criado uma sessão antes de usar `enter`.
 
 O término da trajetória e o término da sessão gráfica são acontecimentos diferentes. Em `gui`, a geração pode concluir seus três segundos simulados enquanto a janela continua aberta. A permanência do RViz não indica que novos eventos continuem sendo gerados. Para revisitar o intervalo gravado, usa-se `view`.
 
